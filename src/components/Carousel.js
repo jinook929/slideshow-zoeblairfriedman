@@ -46,7 +46,7 @@ export default function Carousel() {
       {Images.map((image, i) => {
         return (
           <div className={checkActive(i)} key={i} onClick={handleImageClick}>
-            {i === currentSlide ? <Slide image={image} /> : null}      
+            {i === currentSlide ? <Slide image={image} autoPlay={autoPlay} setAutoPlay={setAutoPlay} /> : null}      
           </div>
         )
       })}
