@@ -1,10 +1,73 @@
+.header {
+  margin: 0;
+  color: white;
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  justify-self: center;
+}
+
+.imgWrapper {
+  width: 70vw;
+  height: 100%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+}
+
+.carousel-image {
+  width: 100%;
+  width: 70vw;
+  object-fit: cover;
+  cursor: pointer;
+  max-width: 1440px;
+}
+
 .slide {
-  opacity: 0;
-  transition-duration: 1s ease;
+  display: none;
 }
 
 .slide-active {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.02);
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.arrowWrapper {
+  margin: 1rem;
+}
+
+.jelly-nav {
+  height: auto;
+  width: 5vw;
+  cursor: pointer;
+}
+
+.btnWrapper {
+  position: absolute;
+  top: 15.5vh;
+  left: 50%;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btnImg {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 3.5px auto 0;
 }

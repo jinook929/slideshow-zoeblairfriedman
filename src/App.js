@@ -1,13 +1,11 @@
 import './App.css';
-import CarouselContainer from './containers/CarouselContainer'
+import Carousel from './components/Carousel'
 
 function App() {
   return (
     <>
-      <h1>The Seabed Mining Project</h1>
-      <div id="main-div">
-        <CarouselContainer/>
-      </div>
+      <h1 className="header">The Seabed Mining Project</h1>
+      <Carousel />
     </>
   );
 }
